@@ -1,1 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humanitarian Aid Directory</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="/">Humanitarian Aid Directory</a>
+      </nav>
+
+      <section class="intro">
+        <p class="eyebrow">Donation discovery resource</p>
+        <h1>Humanitarian Aid Directory</h1>
+        <p>
+          Discover organizations seeking donations for disaster relief, food
+          security, refugee support, children and education, and healthcare.
+        </p>
+      </section>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="Directory controls">
+        <label class="search-label" for="searchInput">Search organizations</label>
+        <input
+          id="searchInput"
+          class="search-input"
+          type="search"
+          placeholder="Search by name, category, or mission"
+        />
+
+        <div class="filter-group" aria-label="Category filters">
+          <button class="filter-button active" type="button" data-category="All">All</button>
+          <button class="filter-button" type="button" data-category="Disaster relief">Disaster relief</button>
+          <button class="filter-button" type="button" data-category="Food Security">Food Security</button>
+          <button class="filter-button" type="button" data-category="Refugee Support">Refugee Support</button>
+          <button class="filter-button" type="button" data-category="Children & Education">Children & Education</button>
+          <button class="filter-button" type="button" data-category="Healthcare">Healthcare</button>
+        </div>
+      </section>
+
+      <section class="results-heading" aria-live="polite">
+        <h2>Active Humanitarian Efforts</h2>
+        <p id="resultCount"></p>
+      </section>
+
+      <section id="directoryGrid" class="directory-grid" aria-label="Organizations"></section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Built as a simple cloud deployment practicum app. Replace image URLs
+        with public Google Cloud Storage, S3, or Azure Blob Storage URLs before
+        final deployment.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
 
