@@ -1,0 +1,23 @@
+{
+  "name": "humanitarian-aid-directory",
+  "version": "1.0.0",
+  "description": "A simple cloud-deployment-ready humanitarian donation directory built with Node.js and Express.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "cloud",
+    "docker",
+    "humanitarian-aid"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
